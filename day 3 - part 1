@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
 
 fun a(x: Char, y: Char): String {
     val inputStream: InputStream =
-        File("C:\\Users\\aktex\\IdeaProjects\\untitled2\\src\\main\\resources\\digits.txt").inputStream()
+        File("digits.txt").inputStream()
     val lineList = mutableListOf<String>()
     inputStream.bufferedReader().forEachLine { lineList.add(it) }
     var z = ""
