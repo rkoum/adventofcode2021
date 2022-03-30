@@ -2,7 +2,7 @@ import java . io . File
 import java . io . InputStream
 
 fun main(args: Array<String>) {
-    val inputStream: InputStream = File("C:\\Users\\aktex\\Documents\\forw.txt").inputStream()
+    val inputStream: InputStream = File("pathname: forw.txt").inputStream()
     val lineList = mutableListOf<String>()
     inputStream.bufferedReader().forEachLine { lineList.add(it.toString()) }
     var horizontal = 0
