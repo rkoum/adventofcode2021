@@ -12,9 +12,9 @@ fun main(args: Array<String>) {
         var num = str.split(" ")[1].toInt()
         var direction = str.split(" ")[0]
         when (direction) {
-            "forward" -> horizontal = horizontal + num
-            "up" -> depth = depth - num
-            "down" -> depth = depth + num
+            "forward" -> horizontal += num
+            "up" -> depth -= num
+            "down" -> depth += num
         }
     }
     println(horizontal*depth)
